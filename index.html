@@ -1534,7 +1534,7 @@ async function submitForm(event) {
   if (btn) { btn.disabled = true; btn.textContent = "Submitting..."; }
 
   try {
-    const res = await fetch("/api/lead", {
+    const res = await fetch("growdeskmedia.railway.internal/api/lead", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload)
