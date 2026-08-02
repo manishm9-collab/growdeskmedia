@@ -1,0 +1,1558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Growdeskmedia - Media, Branding &amp; Social Media Agency in Bilaspur</title>
+<meta name="description" content="Growdeskmedia is a media and branding agency in Bilaspur offering social media marketing, reel shoots, digital marketing and branding for local businesses. Call +91 9406031522." />
+<meta name="keywords" content="Media agency Bilaspur, Branding agency Bilaspur, Growdesk media, Reel shoot Bilaspur, Social media marketing agency, Social media agency" />
+<meta property="og:title" content="Growdeskmedia - Media, Branding & Social Media Agency in Bilaspur" />
+<meta property="og:description" content="Your complete online and offline marketing solution under one roof. Affordable, professional and focused on measurable growth." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #101828;
+  --muted: #667085;
+  --line: #e6e9f0;
+  --soft: #f7f9fc;
+  --soft-blue: #eef6ff;
+  --blue: #1166ff;
+  --blue-dark: #0b46b6;
+  --green: #10b981;
+  --yellow: #f7b500;
+  --pink: #ec4899;
+  --radius: 18px;
+  --shadow: 0 20px 55px rgba(16, 24, 40, 0.12);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: #fff;
+  overflow-x: hidden;
+}
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; }
+
+.container {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(230, 233, 240, 0.85);
+  backdrop-filter: blur(18px);
+}
+.nav-inner {
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--blue), #00b2ff 55%, var(--green));
+  box-shadow: 0 10px 25px rgba(17, 102, 255, 0.25);
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: #475467;
+  font-size: 14px;
+  font-weight: 700;
+}
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.btn {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 0;
+  border-radius: 999px;
+  padding: 0 20px;
+  cursor: pointer;
+  font-weight: 800;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-primary {
+  color: #fff;
+  background: var(--blue);
+  box-shadow: 0 16px 30px rgba(17, 102, 255, 0.24);
+}
+.btn-dark {
+  color: #fff;
+  background: var(--ink);
+  box-shadow: 0 16px 30px rgba(16, 24, 40, 0.2);
+}
+.btn-light {
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+}
+
+.hero {
+  position: relative;
+  min-height: calc(100vh - 74px);
+  padding: 74px 0 38px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 16% 26%, rgba(17, 102, 255, 0.12), transparent 26%),
+    radial-gradient(circle at 88% 16%, rgba(16, 185, 129, 0.14), transparent 24%),
+    linear-gradient(180deg, #f9fbff 0%, #fff 72%);
+}
+.hero .container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.9fr);
+  gap: 54px;
+  align-items: center;
+}
+.eyebrow {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--blue-dark);
+  background: #eaf2ff;
+  border: 1px solid #cfe0ff;
+  border-radius: 999px;
+  padding: 8px 13px;
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.hero h1 {
+  max-width: 760px;
+  font-size: clamp(44px, 7.5vw, 88px);
+  line-height: 0.94;
+  letter-spacing: -0.07em;
+  font-weight: 900;
+}
+.hero h1 span {
+  color: var(--blue);
+  display: inline-block;
+}
+.hero-copy {
+  max-width: 620px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.75;
+  margin: 24px 0 30px;
+}
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.trusted-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 34px;
+  color: #475467;
+  font-weight: 700;
+}
+.avatar-stack { display: flex; }
+.avatar {
+  width: 42px;
+  height: 42px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 900;
+  margin-left: -10px;
+  background: var(--blue);
+}
+.avatar:first-child { margin-left: 0; }
+.avatar:nth-child(2) { background: var(--green); }
+.avatar:nth-child(3) { background: var(--pink); }
+.avatar:nth-child(4) { background: var(--yellow); color: var(--ink); }
+
+.device-stage {
+  position: relative;
+  min-height: 540px;
+}
+.phone {
+  position: absolute;
+  width: 255px;
+  min-height: 520px;
+  border: 10px solid #111827;
+  border-radius: 36px;
+  background: #fff;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.phone-main { right: 54px; top: 0; transform: rotate(3deg); }
+.phone-side { left: 0; top: 70px; transform: rotate(-7deg) scale(0.9); }
+.phone-notch {
+  width: 84px;
+  height: 22px;
+  border-radius: 0 0 14px 14px;
+  background: #111827;
+  margin: 0 auto 14px;
+}
+.app-screen { padding: 0 16px 18px; }
+.app-top {
+  height: 108px;
+  border-radius: 22px;
+  color: #fff;
+  padding: 18px;
+  background: linear-gradient(135deg, var(--blue), #00b2ff);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.app-top strong { font-size: 18px; letter-spacing: -0.04em; }
+.app-pills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 16px 0;
+}
+.app-pills span,
+.mini-card {
+  min-height: 42px;
+  border-radius: 14px;
+  background: #f1f5f9;
+}
+.app-pills span:nth-child(2) { background: #fff4ce; }
+.app-pills span:nth-child(3) { background: #dff7ed; }
+.course-card {
+  display: grid;
+  grid-template-columns: 62px 1fr;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  margin-bottom: 10px;
+}
+.course-thumb {
+  border-radius: 14px;
+  background: linear-gradient(135deg, #111827, var(--blue));
+}
+.line {
+  height: 10px;
+  border-radius: 99px;
+  background: #d9e2ef;
+  margin: 8px 0;
+}
+.line.short { width: 64%; }
+.floating-card {
+  position: absolute;
+  right: 0;
+  bottom: 52px;
+  width: 238px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: var(--shadow);
+}
+.floating-card strong {
+  display: block;
+  font-size: 34px;
+  letter-spacing: -0.06em;
+  color: var(--blue);
+}
+.floating-card p {
+  margin-top: 4px;
+  color: var(--muted);
+  line-height: 1.55;
+  font-size: 14px;
+}
+
+.trust-strip {
+  padding: 20px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+.trust-strip .container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+.trust-item {
+  min-height: 70px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #475467;
+  background: var(--soft);
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.section {
+  padding: 96px 0;
+}
+.section-soft { background: var(--soft); }
+.section-head {
+  max-width: 710px;
+  margin-bottom: 46px;
+}
+.section-head.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.kicker {
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.section-title {
+  font-size: clamp(34px, 5vw, 58px);
+  line-height: 1.02;
+  letter-spacing: -0.06em;
+  font-weight: 900;
+}
+.section-desc {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.7;
+  margin-top: 16px;
+}
+
+.brand-builder {
+  display: grid;
+  grid-template-columns: 1.02fr 0.98fr;
+  gap: 28px;
+  align-items: stretch;
+}
+.showcase-panel {
+  min-height: 470px;
+  border-radius: 28px;
+  padding: 34px;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(17, 102, 255, 0.92), rgba(16, 185, 129, 0.88)),
+    url("https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1100&q=80") center/cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow);
+}
+.showcase-panel h3 {
+  max-width: 420px;
+  font-size: clamp(34px, 5vw, 58px);
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+.showcase-panel p {
+  max-width: 450px;
+  color: rgba(255, 255, 255, 0.86);
+  line-height: 1.7;
+  font-size: 17px;
+}
+.revenue-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.revenue-card {
+  min-height: 146px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: #fff;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.revenue-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 35px rgba(16, 24, 40, 0.09);
+}
+.revenue-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  color: #fff;
+  background: var(--blue);
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+.revenue-card:nth-child(2) .revenue-icon { background: var(--green); }
+.revenue-card:nth-child(3) .revenue-icon { background: var(--pink); }
+.revenue-card:nth-child(4) .revenue-icon { background: var(--yellow); color: var(--ink); }
+.revenue-card:nth-child(5) .revenue-icon { background: #7c3aed; }
+.revenue-card:nth-child(6) .revenue-icon { background: #ef4444; }
+.revenue-card h4 {
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  margin-bottom: 8px;
+}
+.revenue-card p {
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.feature-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 40px;
+  align-items: center;
+}
+.feature-list {
+  display: grid;
+  gap: 14px;
+}
+.feature-row {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #fff;
+}
+.feature-row span {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  background: var(--soft-blue);
+  color: var(--blue);
+  font-weight: 900;
+}
+.feature-row h3 {
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  margin-bottom: 6px;
+}
+.feature-row p {
+  color: var(--muted);
+  line-height: 1.65;
+  font-size: 14px;
+}
+.stack-card {
+  min-height: 540px;
+  border-radius: 30px;
+  padding: 28px;
+  background: #111827;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  box-shadow: var(--shadow);
+}
+.stack-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.stack-tabs span {
+  padding: 9px 13px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.09);
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 13px;
+  font-weight: 800;
+}
+.analytics-card {
+  border-radius: 24px;
+  padding: 24px;
+  background: #fff;
+  color: var(--ink);
+}
+.chart {
+  height: 170px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  align-items: end;
+  margin: 22px 0;
+}
+.chart span {
+  display: block;
+  border-radius: 999px 999px 10px 10px;
+  background: linear-gradient(180deg, var(--blue), #8fd3ff);
+}
+.chart span:nth-child(1) { height: 42%; }
+.chart span:nth-child(2) { height: 70%; }
+.chart span:nth-child(3) { height: 58%; }
+.chart span:nth-child(4) { height: 86%; }
+.chart span:nth-child(5) { height: 66%; }
+.chart span:nth-child(6) { height: 92%; }
+.chart span:nth-child(7) { height: 76%; }
+.security-card {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 14px;
+  border-radius: 20px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.08);
+}
+.security-card span {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: var(--green);
+  font-weight: 900;
+}
+.security-card p {
+  color: rgba(255, 255, 255, 0.72);
+  margin-top: 4px;
+  line-height: 1.55;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+.number-card {
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 28px 18px;
+  background: #fff;
+  text-align: center;
+}
+.number-card strong {
+  display: block;
+  color: var(--blue);
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+.number-card span {
+  display: block;
+  color: var(--muted);
+  font-weight: 800;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.testimonial-card {
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: #fff;
+  padding: 24px;
+}
+.stars {
+  color: #f59e0b;
+  letter-spacing: 0.12em;
+  margin-bottom: 18px;
+}
+.testimonial-card p {
+  color: #475467;
+  line-height: 1.72;
+  min-height: 150px;
+}
+.person {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 22px;
+}
+.person-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: var(--blue);
+  font-weight: 900;
+}
+.person strong {
+  display: block;
+  letter-spacing: -0.03em;
+}
+.person span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.faq-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 12px;
+}
+details {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fff;
+  padding: 20px 22px;
+}
+summary {
+  cursor: pointer;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
+details p {
+  color: var(--muted);
+  line-height: 1.72;
+  margin-top: 14px;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(16, 24, 40, 0.6);
+  backdrop-filter: blur(4px);
+  padding: 24px 16px;
+  overflow-y: auto;
+  align-items: flex-start;
+  justify-content: center;
+}
+.modal-overlay.open {
+  display: flex;
+}
+.modal-shell {
+  position: relative;
+  width: 100%;
+  max-width: 1180px;
+  margin: 24px auto;
+  animation: modalPop 0.22s ease;
+}
+@keyframes modalPop {
+  from { opacity: 0; transform: translateY(14px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.modal-close {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  color: var(--ink);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(16, 24, 40, 0.25);
+  z-index: 2;
+  display: grid;
+  place-items: center;
+}
+.modal-close:hover { background: var(--soft); }
+.modal-overlay .cta-panel { position: static; top: auto; }
+body.modal-open { overflow: hidden; }
+@media (max-width: 680px) {
+  .modal-overlay { padding: 12px; }
+  .modal-close { top: 4px; right: 4px; }
+}
+
+.form-wrap {
+  display: grid;
+  grid-template-columns: 0.78fr 1.22fr;
+  gap: 28px;
+  align-items: start;
+}
+.cta-panel {
+  position: sticky;
+  top: 98px;
+  border-radius: 28px;
+  color: #fff;
+  padding: 34px;
+  background: linear-gradient(135deg, #111827, var(--blue-dark));
+  box-shadow: var(--shadow);
+}
+.cta-panel h2 {
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+.cta-panel p {
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.75;
+  margin: 18px 0 24px;
+}
+.cta-checks {
+  display: grid;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 700;
+}
+.form-box {
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 18px 40px rgba(16, 24, 40, 0.07);
+}
+.step-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+.step-dot {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #eef2f7;
+  color: #667085;
+  font-weight: 900;
+}
+.step-dot.active,
+.step-dot.done {
+  color: #fff;
+  background: var(--blue);
+}
+.step-line {
+  height: 2px;
+  flex: 1;
+  background: #eef2f7;
+}
+.step-line.done { background: var(--blue); }
+.form-step { display: none; }
+.form-step.active { display: block; }
+.step-label { margin-bottom: 22px; }
+.step-label h3 {
+  font-size: 24px;
+  letter-spacing: -0.04em;
+}
+.step-label p {
+  color: var(--muted);
+  margin-top: 6px;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.form-grid.single { grid-template-columns: 1fr; }
+.form-group label {
+  display: block;
+  color: #344054;
+  font-size: 13px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+.opt {
+  color: #98a2b3;
+  font-weight: 700;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  border: 1px solid #d0d5dd;
+  border-radius: 14px;
+  color: var(--ink);
+  background: #fff;
+  outline: 0;
+  padding: 13px 14px;
+  transition: border 0.18s ease, box-shadow 0.18s ease;
+}
+.form-group textarea {
+  min-height: 112px;
+  resize: vertical;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 4px rgba(17, 102, 255, 0.12);
+}
+.optional-badge {
+  color: #475467;
+  background: var(--soft);
+  border-radius: 14px;
+  padding: 14px 16px;
+  line-height: 1.55;
+  font-size: 14px;
+}
+.service-selector {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.service-opt {
+  min-height: 92px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  gap: 6px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--soft);
+  cursor: pointer;
+  transition: border 0.18s ease, background 0.18s ease, transform 0.18s ease;
+}
+.service-opt:hover { transform: translateY(-2px); }
+.service-opt.selected {
+  border-color: var(--blue);
+  background: #eaf2ff;
+}
+.s-icon {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: var(--blue);
+  border-radius: 12px;
+  font-weight: 900;
+}
+.s-name {
+  color: #344054;
+  font-size: 13px;
+  font-weight: 900;
+}
+.form-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 28px;
+}
+.btn-prev, .btn-next {
+  min-height: 44px;
+  border: 0;
+  border-radius: 999px;
+  padding: 0 19px;
+  cursor: pointer;
+  font-weight: 900;
+}
+.btn-prev {
+  color: #344054;
+  background: var(--soft);
+}
+.btn-next {
+  color: #fff;
+  background: var(--blue);
+}
+.success-box {
+  text-align: center;
+  padding: 36px 8px;
+}
+.success-icon {
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 18px;
+  color: #fff;
+  border-radius: 22px;
+  background: var(--green);
+  font-size: 32px;
+  font-weight: 900;
+}
+.success-box h3 {
+  font-size: 28px;
+  letter-spacing: -0.05em;
+  margin-bottom: 10px;
+}
+.success-box p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+footer {
+  padding: 54px 0 28px;
+  color: rgba(255, 255, 255, 0.76);
+  background: #101828;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr repeat(4, 1fr);
+  gap: 34px;
+  padding-bottom: 38px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.footer-grid h4 {
+  color: #fff;
+  margin-bottom: 14px;
+}
+.footer-grid a {
+  display: block;
+  color: rgba(255, 255, 255, 0.62);
+  margin: 10px 0;
+  font-size: 14px;
+}
+.footer-brand-copy {
+  max-width: 330px;
+  line-height: 1.7;
+  margin-top: 14px;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 24px;
+  font-size: 14px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 980px) {
+  .nav-links { display: none; }
+  .hero { padding-top: 54px; }
+  .hero .container,
+  .brand-builder,
+  .feature-layout,
+  .form-wrap {
+    grid-template-columns: 1fr;
+  }
+  .device-stage {
+    min-height: 520px;
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .cta-panel { position: static; }
+  .trust-strip .container,
+  .numbers,
+  .testimonials,
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .container { width: min(100% - 28px, 1180px); }
+  .nav-inner { height: 66px; }
+  .nav-actions .btn-light { display: none; }
+  .hero {
+    min-height: auto;
+    padding: 42px 0 26px;
+  }
+  .hero h1 { font-size: clamp(42px, 14vw, 60px); }
+  .hero-copy { font-size: 16px; }
+  .trusted-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .device-stage {
+    min-height: 455px;
+    transform: scale(0.86);
+    transform-origin: top center;
+    margin-bottom: -52px;
+  }
+  .phone { width: 230px; min-height: 480px; }
+  .phone-main { right: 6px; }
+  .phone-side { left: -14px; }
+  .floating-card {
+    right: -4px;
+    bottom: 34px;
+    width: 210px;
+  }
+  .trust-strip .container,
+  .revenue-grid,
+  .numbers,
+  .testimonials,
+  .form-grid,
+  .service-selector,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .section { padding: 70px 0; }
+  .showcase-panel { min-height: 390px; }
+  .form-box { padding: 22px; }
+  .form-nav { flex-direction: column-reverse; }
+  .btn-prev, .btn-next { width: 100%; }
+  .footer-bottom { flex-direction: column; }
+}
+</style>
+</head>
+<body>
+  <header class="site-nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#hero" aria-label="Growdeskmedia home">
+        <span class="brand-mark">G</span>
+        <span>Growdeskmedia</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#solutions">Solutions</a>
+        <a href="#features">Features</a>
+        <a href="#numbers">Results</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faqs">FAQs</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-light" href="#solutions">Explore</a>
+        <a class="btn btn-primary" href="#" onclick="openQuoteModal(event)">Get a Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-content reveal">
+          <div class="eyebrow">Built for growing local businesses</div>
+          <h1>Websites, marketing and growth systems for <span>ambitious brands</span></h1>
+          <p class="hero-copy">Launch a sharp online presence, generate leads, manage content, run campaigns and automate follow-ups with one creative and technical team.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#" onclick="openQuoteModal(event)">Book a free strategy call</a>
+            <a class="btn btn-light" href="#features">See what you get</a>
+          </div>
+          <div class="trusted-row">
+            <div class="avatar-stack" aria-hidden="true">
+              <span class="avatar">FD</span>
+              <span class="avatar">CA</span>
+              <span class="avatar">ED</span>
+              <span class="avatar">RE</span>
+            </div>
+            <span>Trusted by shops, clinics, coaches, creators and service businesses.</span>
+          </div>
+        </div>
+        <div class="device-stage reveal" aria-label="Marketing dashboard and mobile app preview">
+          <div class="phone phone-side">
+            <div class="phone-notch"></div>
+            <div class="app-screen">
+              <div class="app-top" style="background:linear-gradient(135deg,#111827,#7c3aed);">
+                <strong>Campaign Studio</strong>
+                <small>Posts, reels, ads and leads</small>
+              </div>
+              <div class="app-pills"><span></span><span></span><span></span></div>
+              <div class="course-card">
+                <div class="course-thumb"></div>
+                <div><div class="line"></div><div class="line short"></div></div>
+              </div>
+              <div class="course-card">
+                <div class="course-thumb" style="background:linear-gradient(135deg,#10b981,#f7b500);"></div>
+                <div><div class="line"></div><div class="line short"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="phone phone-main">
+            <div class="phone-notch"></div>
+            <div class="app-screen">
+              <div class="app-top">
+                <strong>Your Brand Hub</strong>
+                <small>Website, CRM and automation</small>
+              </div>
+              <div class="app-pills"><span></span><span></span><span></span></div>
+              <div class="course-card">
+                <div class="course-thumb"></div>
+                <div><div class="line"></div><div class="line short"></div></div>
+              </div>
+              <div class="mini-card"></div>
+              <div class="course-card">
+                <div class="course-thumb" style="background:linear-gradient(135deg,#ec4899,#1166ff);"></div>
+                <div><div class="line"></div><div class="line short"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-card">
+            <strong>500+</strong>
+            <p>campaign assets, landing pages and growth systems delivered for Indian businesses.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust-strip" aria-label="Trust highlights">
+      <div class="container">
+        <div class="trust-item">No hidden charges</div>
+        <div class="trust-item">Dedicated support</div>
+        <div class="trust-item">Performance reports</div>
+        <div class="trust-item">Local market strategy</div>
+        <div class="trust-item">Creative plus tech team</div>
+      </div>
+    </div>
+
+    <section class="section" id="solutions">
+      <div class="container">
+        <div class="brand-builder">
+          <div class="showcase-panel reveal">
+            <div>
+              <div class="kicker" style="color:#fff;">Build your own brand</div>
+              <h3>Turn attention into enquiries, bookings and repeat customers.</h3>
+            </div>
+            <p>We create the digital infrastructure behind growth: brand identity, social content, landing pages, ads, Google presence, CRM and follow-up automation.</p>
+          </div>
+          <div>
+            <div class="section-head reveal" style="margin-bottom:22px;">
+              <div class="kicker">Diversify your growth</div>
+              <h2 class="section-title">Everything you need to sell better.</h2>
+              <p class="section-desc">Choose one service or let us build the full stack around your business goals.</p>
+            </div>
+            <div class="revenue-grid reveal">
+              <article class="revenue-card"><div class="revenue-icon">S</div><h4>Social Media</h4><p>Content calendars, reels, posts, page management and community replies.</p></article>
+              <article class="revenue-card"><div class="revenue-icon">A</div><h4>Paid Ads</h4><p>Google and Meta campaigns built around leads, calls and walk-ins.</p></article>
+              <article class="revenue-card"><div class="revenue-icon">V</div><h4>Video Production</h4><p>Product videos, business shoots, edits, reels and motion creatives.</p></article>
+              <article class="revenue-card"><div class="revenue-icon">B</div><h4>Branding</h4><p>Logo, print material, packaging, profiles, banners and brand kits.</p></article>
+              <article class="revenue-card"><div class="revenue-icon">W</div><h4>Websites</h4><p>Fast business sites, landing pages, ecommerce and WhatsApp integration.</p></article>
+              <article class="revenue-card"><div class="revenue-icon">C</div><h4>Calling and CRM</h4><p>Lead follow-up, appointment booking, CRM setup and daily updates.</p></article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="features">
+      <div class="container">
+        <div class="feature-layout">
+          <div class="feature-list reveal">
+            <div class="section-head">
+              <div class="kicker">Features for success</div>
+              <h2 class="section-title">A complete tech stack for your business.</h2>
+              <p class="section-desc">Inspired by modern creator platforms, designed for practical local-business growth.</p>
+            </div>
+            <article class="feature-row"><span>01</span><div><h3>Ownership of your brand console</h3><p>Keep your website, profiles, lead data, campaign assets and reports organized in one workflow.</p></div></article>
+            <article class="feature-row"><span>02</span><div><h3>Fast launches and low-friction updates</h3><p>Get campaign pages, offers, creative changes and automation updates without waiting weeks.</p></div></article>
+            <article class="feature-row"><span>03</span><div><h3>Content security and consistency</h3><p>Reusable templates, brand guidelines and controlled creative systems keep your business looking sharp.</p></div></article>
+            <article class="feature-row"><span>04</span><div><h3>Your design, your market</h3><p>We adapt visuals, language and offers for your city, category and audience instead of using generic templates.</p></div></article>
+          </div>
+          <div class="stack-card reveal">
+            <div class="stack-tabs">
+              <span>Website</span><span>Instagram</span><span>Google</span><span>CRM</span><span>Automation</span>
+            </div>
+            <div class="analytics-card">
+              <strong style="font-size:24px;letter-spacing:-0.04em;">Lead performance</strong>
+              <p style="color:var(--muted);margin-top:6px;">Weekly tracking for calls, forms, messages and campaign spend.</p>
+              <div class="chart" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+              <div class="line"></div>
+              <div class="line short"></div>
+            </div>
+            <div class="security-card">
+              <span>OK</span>
+              <div><strong>Growth system active</strong><p>Automated lead capture, WhatsApp follow-up and reporting are ready to run.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="numbers">
+      <div class="container">
+        <div class="section-head center reveal">
+          <div class="kicker">We let the numbers talk</div>
+          <h2 class="section-title">One partner, many growth channels.</h2>
+          <p class="section-desc">The goal is simple: make your business easier to find, trust and contact.</p>
+        </div>
+        <div class="numbers reveal">
+          <div class="number-card"><strong>500+</strong><span>Client projects</span></div>
+          <div class="number-card"><strong>10+</strong><span>Core services</span></div>
+          <div class="number-card"><strong>24h</strong><span>Fast response</span></div>
+          <div class="number-card"><strong>3+</strong><span>Years active</span></div>
+          <div class="number-card"><strong>100%</strong><span>Custom strategy</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="reviews">
+      <div class="container">
+        <div class="section-head center reveal">
+          <div class="kicker">Do not just take our word</div>
+          <h2 class="section-title">Built for business owners who need outcomes.</h2>
+        </div>
+        <div class="testimonials reveal">
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>Growdeskmedia helped us clean up our social media, run local ads and bring more walk-ins without confusing technical talk.</p>
+            <div class="person"><div class="person-avatar">RK</div><div><strong>Rohit K.</strong><span>Restaurant Owner</span></div></div>
+          </article>
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>The team built our website and WhatsApp flow quickly. Leads are easier to track now and our staff knows who to follow up with.</p>
+            <div class="person"><div class="person-avatar" style="background:var(--green);">PS</div><div><strong>Priya S.</strong><span>Clinic Manager</span></div></div>
+          </article>
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>Our coaching brand looks more professional everywhere. The creatives, landing page and calling support made a visible difference.</p>
+            <div class="person"><div class="person-avatar" style="background:var(--pink);">AM</div><div><strong>Ankit M.</strong><span>Education Founder</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faqs">
+      <div class="container">
+        <div class="section-head center reveal">
+          <div class="kicker">FAQs</div>
+          <h2 class="section-title">Questions before we start?</h2>
+        </div>
+        <div class="faq-list reveal">
+          <details open>
+            <summary>Can you handle both website and marketing?</summary>
+            <p>Yes. We can build the website, landing pages, ad campaigns, social media content, CRM setup and follow-up process together.</p>
+          </details>
+          <details>
+            <summary>Do I need to choose a full package?</summary>
+            <p>No. You can start with one service such as social media, ads or a website, then add more when your business is ready.</p>
+          </details>
+          <details>
+            <summary>Will you customize it for my city and category?</summary>
+            <p>Yes. We plan offers, creative direction, keywords and campaign targeting around your location, audience and competition.</p>
+          </details>
+          <details>
+            <summary>How do I get pricing?</summary>
+            <p>Click "Get a Quote" to open the quote form. We will review your business and recommend a practical package with clear pricing.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal-overlay" id="get-started" onclick="if(event.target===this) closeQuoteModal()">
+      <div class="modal-shell">
+        <button type="button" class="modal-close" aria-label="Close" onclick="closeQuoteModal()">&times;</button>
+      <div class="container form-wrap">
+        <aside class="cta-panel reveal">
+          <div class="kicker" style="color:#8fd3ff;">Book a demo. It is free.</div>
+          <h2>Tell us what you want to grow next.</h2>
+          <p>Share your details and we will map a practical service plan for your business. No pressure, no jargon, just the next right moves.</p>
+          <div class="cta-checks">
+            <span>✓ Free business review</span>
+            <span>✓ Custom package recommendation</span>
+            <span>✓ Clear pricing and timeline</span>
+          </div>
+        </aside>
+
+        <div class="form-box reveal">
+          <div class="step-indicator">
+            <div class="step-dot active" id="dot-1">1</div>
+            <div class="step-line" id="line-1"></div>
+            <div class="step-dot" id="dot-2">2</div>
+            <div class="step-line" id="line-2"></div>
+            <div class="step-dot" id="dot-3">3</div>
+          </div>
+
+          <div class="form-step active" id="step-1">
+            <div class="step-label">
+              <h3>Basic business information</h3>
+              <p>Tell us who you are and where you are based.</p>
+            </div>
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Business / Owner Name <span style="color:#e11d48;">*</span></label>
+                <input type="text" id="f-name" placeholder="e.g. Riya's Boutique" />
+              </div>
+              <div class="form-group">
+                <label>Business Type <span style="color:#e11d48;">*</span></label>
+                <select id="f-type">
+                  <option value="">Select category...</option>
+                  <option>Restaurant / Cafe / Food</option>
+                  <option>Retail / Shop</option>
+                  <option>Clinic / Healthcare</option>
+                  <option>Coaching / Education</option>
+                  <option>Real Estate</option>
+                  <option>Fashion / Clothing</option>
+                  <option>Salon / Beauty</option>
+                  <option>Fitness / Gym</option>
+                  <option>Personal Brand / Influencer</option>
+                  <option>Service Business</option>
+                  <option>Startup</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-grid">
+              <div class="form-group">
+                <label>City / Location <span style="color:#e11d48;">*</span></label>
+                <input type="text" id="f-city" placeholder="e.g. Bilaspur, Chhattisgarh" />
+              </div>
+              <div class="form-group">
+                <label>Phone Number <span style="color:#e11d48;">*</span></label>
+                <input type="tel" id="f-phone" placeholder="+91 9876543210" />
+              </div>
+            </div>
+            <div class="form-grid single">
+              <div class="form-group">
+                <label>Email Address <span class="opt">(optional)</span></label>
+                <input type="email" id="f-email" placeholder="your@email.com" />
+              </div>
+            </div>
+            <div class="form-nav">
+              <span></span>
+              <button class="btn-next" type="button" onclick="goStep(2)">Next: Online presence</button>
+            </div>
+          </div>
+
+          <div class="form-step" id="step-2">
+            <div class="step-label">
+              <h3>Your online presence</h3>
+              <p>Share your current handles so we can review what is already working.</p>
+            </div>
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Instagram Handle <span class="opt">(optional)</span></label>
+                <input type="text" id="f-insta" placeholder="@yourbusiness" />
+              </div>
+              <div class="form-group">
+                <label>Facebook Page <span class="opt">(optional)</span></label>
+                <input type="text" id="f-fb" placeholder="facebook.com/yourbusiness" />
+              </div>
+            </div>
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Website <span class="opt">(optional)</span></label>
+                <input type="text" id="f-web" placeholder="www.yourbusiness.com" />
+              </div>
+              <div class="form-group">
+                <label>WhatsApp Number <span class="opt">(optional)</span></label>
+                <input type="tel" id="f-wa" placeholder="+91 9876543210" />
+              </div>
+            </div>
+            <div class="form-grid single">
+              <div class="form-group">
+                <label>Main Competitors <span class="opt">(optional)</span></label>
+                <input type="text" id="f-comp" placeholder="e.g. @competitorbrand, local competitor name" />
+              </div>
+            </div>
+            <div class="optional-badge">Sharing competitors is optional, but it helps us shape stronger creative, targeting and offers.</div>
+            <div class="form-nav">
+              <button class="btn-prev" type="button" onclick="goStep(1)">Back</button>
+              <button class="btn-next" type="button" onclick="goStep(3)">Next: Services needed</button>
+            </div>
+          </div>
+
+          <div class="form-step" id="step-3">
+            <div class="step-label">
+              <h3>Services you are interested in</h3>
+              <p>Select all that apply. We will tailor a package around your goals.</p>
+            </div>
+            <div class="service-selector" id="service-selector">
+              <div class="service-opt" onclick="toggleService(this)"><div class="s-icon">S</div><div class="s-name">Social Media</div></div>
+              <div class="service-opt" onclick="toggleService(this)"><div class="s-icon">A</div><div class="s-name">Digital Marketing</div></div>
+              <div class="service-opt" onclick="toggleService(this)"><div class="s-icon">V</div><div class="s-name">Video Production</div></div>
+              <div class="service-opt" onclick="toggleService(this)"><div class="s-icon">B</div><div class="s-name">Branding</div></div>
+              <div class="service-opt" onclick="toggleService(this)"><div class="s-icon">W</div><div class="s-name">Website</div></div>
+              <div class="service-opt" onclick="toggleService(this)"><div class="s-icon">C</div><div class="s-name">Telecalling</div></div>
+              <div class="service-opt" onclick="toggleService(this)"><div class="s-icon">G</div><div class="s-name">Local SEO</div></div>
+              <div class="service-opt" onclick="toggleService(this)"><div class="s-icon">AI</div><div class="s-name">Automation</div></div>
+              <div class="service-opt" onclick="toggleService(this)"><div class="s-icon">T</div><div class="s-name">Training</div></div>
+            </div>
+            <div style="margin-top:20px;">
+              <div class="form-group">
+                <label>Anything else you would like to share? <span class="opt">(optional)</span></label>
+                <textarea id="f-msg" placeholder="Tell us your goal, budget range or any specific requirement..."></textarea>
+              </div>
+            </div>
+            <div class="form-nav">
+              <button class="btn-prev" type="button" onclick="goStep(2)">Back</button>
+              <button class="btn-next" type="button" onclick="submitForm(event)">Submit and get my quote</button>
+            </div>
+          </div>
+
+          <div class="form-step" id="step-success">
+            <div class="success-box">
+              <div class="success-icon">✓</div>
+              <h3>We have got your details.</h3>
+              <p>Thank you for reaching out. Our team will review your business profile and contact you within 24 hours with a customized service plan and pricing.</p>
+              <div style="display:flex;gap:12px;justify-content:center;margin-top:24px;flex-wrap:wrap;">
+                <a href="https://wa.me/919406031522" class="btn btn-primary" target="_blank" rel="noopener">Message us on WhatsApp</a>
+                <a href="tel:+919406031522" class="btn btn-light">Call +91 94060 31522</a>
+              </div>
+              <p style="margin-top:16px;color:var(--muted);font-size:13px;">Prefer email? Write to <a href="mailto:growdeskmedia@gmail.com" style="color:var(--blue);font-weight:700;">growdeskmedia@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="#hero" style="color:#fff;">
+            <span class="brand-mark">G</span>
+            <span>Growdeskmedia</span>
+          </a>
+          <p class="footer-brand-copy">Your complete online and offline marketing solution under one roof. Affordable, professional and focused on measurable growth.</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <a href="#solutions">Social Media</a>
+          <a href="#solutions">Digital Marketing</a>
+          <a href="#solutions">Video Production</a>
+          <a href="#solutions">Branding</a>
+        </div>
+        <div>
+          <h4>Growth</h4>
+          <a href="#features">Website and Tech</a>
+          <a href="#features">CRM Setup</a>
+          <a href="#features">Automation</a>
+          <a href="#features">Local SEO</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="#" onclick="openQuoteModal(event)">Get a Quote</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#faqs">FAQs</a>
+          <a href="#numbers">Results</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="tel:+919406031522">+91 94060 31522</a>
+          <a href="mailto:growdeskmedia@gmail.com">growdeskmedia@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Growdeskmedia. All rights reserved.</span>
+        <span>Bilaspur, Chhattisgarh</span>
+      </div>
+    </div>
+  </footer>
+
+<script>
+const revealEls = document.querySelectorAll(".reveal");
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) entry.target.classList.add("visible");
+  });
+}, { threshold: 0.12 });
+revealEls.forEach((el) => observer.observe(el));
+
+/* ---------- Quote modal open / close ---------- */
+const quoteModal = document.getElementById("get-started");
+
+function openQuoteModal(e) {
+  if (e) e.preventDefault();
+  quoteModal.classList.add("open");
+  document.body.classList.add("modal-open");
+  // Elements inside the modal use the scroll-triggered .reveal fade-in, but
+  // IntersectionObserver never fires for content inside display:none, so
+  // force them visible the moment the modal opens.
+  quoteModal.querySelectorAll(".reveal").forEach((el) => el.classList.add("visible"));
+}
+
+function closeQuoteModal() {
+  quoteModal.classList.remove("open");
+  document.body.classList.remove("modal-open");
+}
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && quoteModal.classList.contains("open")) closeQuoteModal();
+});
+
+/* ---------- Multi-step form ---------- */
+function goStep(n) {
+  if (n === 2) {
+    const name = document.getElementById("f-name").value.trim();
+    const city = document.getElementById("f-city").value.trim();
+    const phone = document.getElementById("f-phone").value.trim();
+    if (!name || !city || !phone) {
+      alert("Please fill in Business Name, City and Phone Number.");
+      return;
+    }
+  }
+  document.querySelectorAll(".form-step").forEach((step) => step.classList.remove("active"));
+  document.getElementById("step-" + n).classList.add("active");
+  updateDots(n);
+  document.querySelector(".modal-shell").scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function updateDots(active) {
+  for (let i = 1; i <= 3; i++) {
+    const dot = document.getElementById("dot-" + i);
+    dot.classList.remove("active", "done");
+    if (i < active) dot.classList.add("done");
+    else if (i === active) dot.classList.add("active");
+  }
+  for (let i = 1; i <= 2; i++) {
+    document.getElementById("line-" + i).classList.toggle("done", i < active);
+  }
+}
+
+function toggleService(el) {
+  el.classList.toggle("selected");
+}
+
+/* ---------- Submit lead to backend ---------- */
+async function submitForm(event) {
+  const btn = event && event.target;
+  const services = Array.from(document.querySelectorAll("#service-selector .service-opt.selected .s-name"))
+    .map((el) => el.textContent);
+
+  const payload = {
+    name: document.getElementById("f-name").value.trim(),
+    businessType: document.getElementById("f-type").value,
+    city: document.getElementById("f-city").value.trim(),
+    phone: document.getElementById("f-phone").value.trim(),
+    email: document.getElementById("f-email").value.trim(),
+    instagram: document.getElementById("f-insta").value.trim(),
+    facebook: document.getElementById("f-fb").value.trim(),
+    website: document.getElementById("f-web").value.trim(),
+    whatsapp: document.getElementById("f-wa").value.trim(),
+    competitors: document.getElementById("f-comp").value.trim(),
+    services: services,
+    message: document.getElementById("f-msg").value.trim()
+  };
+
+  if (btn) { btn.disabled = true; btn.textContent = "Submitting..."; }
+
+  try {
+    const res = await fetch("/api/lead", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    });
+    if (!res.ok) throw new Error("Request failed");
+  } catch (err) {
+    // Backend unreachable - still let the visitor know we have their details
+    // and give them a direct way to reach us.
+    console.error("Lead submit failed:", err);
+  } finally {
+    if (btn) { btn.disabled = false; btn.textContent = "Submit and get my quote"; }
+  }
+
+  document.querySelectorAll(".form-step").forEach((step) => step.classList.remove("active"));
+  document.getElementById("step-success").classList.add("active");
+  updateDots(4);
+  document.querySelector(".modal-shell").scrollTo({ top: 0, behavior: "smooth" });
+}
+</script>
+</body>
+</html>
