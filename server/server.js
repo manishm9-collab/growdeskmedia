@@ -25,6 +25,28 @@ const LEADS_FILE = path.join(__dirname, "leads.json");
 const NOTIFY_EMAIL = process.env.NOTIFY_EMAIL || "growdeskmedia@gmail.com";
 
 app.use(express.json());
+const allowedOrigins = [
+  "https://growdeskmedia.com",
+  "https://www.growdeskmedia.com"
+];
+
+app.use((req, res, next) => {
+  const origin = req.headers.origin;
+
+  if (allowedOrigins.includes(origin)) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+  }
+
+  res.setHeader("Vary", "Origin");
+  res.setHeader("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+
+  if (req.method === "OPTIONS") {
+    return res.sendStatus(204);
+  }
+
+  next();
+});
 app.use(express.static(path.join(__dirname, ".."))); // serves index.html from project root
 
 // --- Rate limiting (very basic, in-memory) ---
